@@ -116,7 +116,9 @@ h6 {
     line-height: 48px;
     margin-bottom: 10px;
   }
+}
 
+@media (max-width: 575.98px) {
   .home-content .button-group .btn {
     margin: 10px 2.5px;
     padding: 5px 10px;
