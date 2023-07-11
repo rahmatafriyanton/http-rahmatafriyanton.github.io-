@@ -1,0 +1,57 @@
+body {
+  background-color: #222;
+}
+body,
+p {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 0;
+  font-style: normal;
+  line-height: 1.75em;
+  color: #d5d5d5;
+}
+
+/* Page Container */
+
+.page-container {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  flex: 0 0 100%;
+  padding: 40px 70px 60px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 20px 35px 30px;
+  }
+}
+
+/* End Page Container */
+
+/* Navbar */
+.navbar {
+  padding: 0;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-right: 40px;
+}
+
+.navbar .navbar-nav .nav-item:last-child {
+  margin-right: 0px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-style: normal;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+  color: #f5f5f5;
+}
+
+/* End Navbar */
