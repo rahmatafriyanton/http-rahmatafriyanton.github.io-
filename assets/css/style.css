@@ -20,6 +20,18 @@ h6 {
   font-weight: 600;
 }
 
+.btn:focus,
+.btn:active,
+.btn:active:focus,
+.btn.active,
+.btn.active:focus,
+.btn.active:active,
+.btn.active:active:focus,
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* Page Container */
 
 .page-container {
