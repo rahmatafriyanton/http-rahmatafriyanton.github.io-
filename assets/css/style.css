@@ -319,3 +319,53 @@ h6 {
   }
 }
 /* End Timeline */
+
+/* Certificate */
+.certificate-item {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border: 2px solid #444;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.certi-logo {
+  display: table-cell;
+  width: 120px;
+  height: 100%;
+  background-color: #444;
+  padding: 25px;
+  vertical-align: middle;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.certi-logo img {
+  display: block;
+  max-width: 100%;
+}
+.certi-content {
+  display: table-cell;
+  width: 100%;
+  padding: 20px 25px;
+  vertical-align: middle;
+}
+.certi-title a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+.certi-title h4 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+.certi-id {
+  font-size: 0.9em;
+  color: #777;
+}
+.certi-date {
+  font-size: 0.7em;
+  color: #777;
+  opacity: 0.7;
+}
+/* End Certificate */
