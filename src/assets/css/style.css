@@ -1,0 +1,371 @@
+body {
+  background-color: #222;
+}
+body,
+p {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 0;
+  font-style: normal;
+  line-height: 1.75em;
+  color: #d5d5d5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.btn:focus,
+.btn:active,
+.btn:active:focus,
+.btn.active,
+.btn.active:focus,
+.btn.active:active,
+.btn.active:active:focus,
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Page Container */
+
+.page-container {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  flex: 0 0 100%;
+  padding: 40px 70px 60px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 20px 35px 30px;
+  }
+}
+
+/* End Page Container */
+
+/* Navbar */
+.navbar {
+  padding: 0;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-right: 40px;
+}
+
+.navbar .navbar-nav .nav-item:last-child {
+  margin-right: 0px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-style: normal;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+  color: #f5f5f5;
+}
+
+.navbar .navbar-toggler {
+  color: #f5f5f5;
+  border: none;
+  padding: 0;
+}
+
+/* End Navbar */
+
+/* Home Content */
+.home-content {
+  padding: 40px;
+  margin: 100px 0;
+  text-align: center !important;
+}
+
+.home-content .title-3 {
+  font-size: 20px;
+  color: #aaa;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.home-content .title-1 {
+  font-size: 48px;
+  line-height: 56px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.home-content .button-group .btn {
+  margin: 20px 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+@media (max-width: 767.98px) {
+  .home-content {
+    padding: 20px 0px;
+    margin: 50px 0;
+  }
+
+  .home-content .title-3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .home-content .title-1 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home-content .button-group .btn {
+    margin: 10px 2.5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+}
+/* End Home Content */
+
+/* Section */
+.section-title {
+  display: inline-block;
+  position: relative;
+  font-size: 21px;
+  margin: 0 0 30px;
+  margin-top: 0px;
+  z-index: 1;
+  padding-bottom: 7px;
+  color: #f5f5f5;
+}
+
+.section-title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: #f5f5f5;
+  height: 2px;
+  bottom: 0;
+}
+
+.section-title.dark::before {
+  background-color: #353535;
+}
+
+.section-title::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 30px;
+  background-color: #007ced;
+  height: 2px;
+  bottom: 0;
+}
+
+/* End Section */
+
+/* Media Role */
+.media-role {
+  margin: 10px 0;
+}
+.media-role .media-icon {
+  position: relative;
+  display: table-cell;
+  padding: 0 10px 5px 0;
+  width: 44px;
+}
+
+.media-role .media-icon .icon {
+  position: relative;
+  display: table-cell;
+  font-size: 33px;
+  color: #007ced;
+}
+
+.media-role .title {
+  font-size: 16px;
+  color: #f5f5f5;
+  font-weight: 600;
+  font-style: normal;
+  margin: 7px 0;
+}
+
+.media-role p {
+  font-size: 0.92em;
+  font-style: normal;
+  line-height: 1.75em;
+  color: #d5d5d5;
+}
+
+/* End Media Role */
+
+/* Page Title */
+.page-title {
+  display: block;
+  position: relative;
+  background-color: #252525;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  padding: 65px 70px;
+  margin-right: -70px;
+  margin-left: -70px;
+  margin-bottom: 65px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.page-title h1 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0;
+  color: #f5f5f5;
+}
+
+.page-title .page-subtitle {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 70px;
+}
+
+.page-title .page-subtitle h4 {
+  color: #aaa;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 1.33em 0;
+}
+/* End Page Title */
+
+/* Timeline */
+
+.timeline-item {
+  position: relative;
+  padding: 25px 0 20px 40px;
+}
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  background-color: #333;
+  width: 1px;
+  left: 15px;
+  bottom: 5px;
+}
+.timeline-item:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1px;
+  background-color: #333;
+  width: calc(100% - 15px);
+  left: 15px;
+  bottom: 3px;
+}
+.timeline-item:first-child {
+  padding-top: 3px;
+}
+.timeline-item:last-child:after {
+  display: none;
+}
+.timeline-item:last-child {
+  margin-bottom: 30px;
+}
+.timeline-item h5.item-period {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 5px -40px;
+  color: #d5d5d5;
+  background-color: #222;
+  padding: 0 10px;
+  line-height: 23px;
+  border: 2px solid #007ced;
+  border-radius: 30px;
+}
+.timeline-item .item-company {
+  display: inline-block;
+  font-size: 12px;
+  color: #aaa;
+  opacity: 0.7;
+  margin-left: 5px;
+}
+.timeline-item .item-title {
+  font-size: 16px;
+  margin: 10px 0 7px;
+}
+.timeline-item p {
+  font-size: 0.92em;
+}
+
+@media (max-width: 575.98px) {
+  .timeline-item .item-company {
+    margin-left: 0px;
+  }
+}
+/* End Timeline */
+
+/* Certificate */
+.certificate-item {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border: 2px solid #444;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.certi-logo {
+  display: table-cell;
+  width: 120px;
+  height: 100%;
+  background-color: #444;
+  padding: 25px;
+  vertical-align: middle;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.certi-logo img {
+  display: block;
+  max-width: 100%;
+}
+.certi-content {
+  display: table-cell;
+  width: 100%;
+  padding: 20px 25px;
+  vertical-align: middle;
+}
+.certi-title a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+.certi-title h4 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+.certi-id {
+  font-size: 0.9em;
+  color: #777;
+}
+.certi-date {
+  font-size: 0.7em;
+  color: #777;
+  opacity: 0.7;
+}
+/* End Certificate */
